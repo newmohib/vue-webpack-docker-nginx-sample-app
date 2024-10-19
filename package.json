@@ -1,0 +1,30 @@
+{
+  "name": "vue-babel-docker-sample-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack serve --open",
+    "build": "webpack --mode production",
+    "start:prod": "chmod +x script.sh && ./script.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@vue/compiler-sfc": "^3.5.12",
+    "babel-loader": "^9.2.1",
+    "vue": "^3.5.12",
+    "vue-loader": "^17.3.1",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.2",
+    "style-loader": "^4.0.0"
+  }
+}
