@@ -1,29 +1,40 @@
-<!-- src/App.vue -->
 <template>
     <div id="app">
-      <h1>Vue Babel Sample App</h1>
-      <HelloWorld />
+      <nav>
+        <ul>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/about">About</router-link></li>
+        </ul>
+      </nav>
+      <router-view></router-view> <!-- This is where the routed components will be displayed -->
     </div>
   </template>
   
   <script>
-  import HelloWorld from './components/HelloWorld.vue';
-  
   export default {
     name: 'App',
-    components: {
-      HelloWorld,
-    },
   };
   </script>
   
   <style>
-  /* Add some basic styling */
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+  nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #42b983;
   }
   </style>
   
